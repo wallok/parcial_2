@@ -1,0 +1,20 @@
+<table>
+    <tr valign="top">
+        <td>
+            {{ post.body }}
+        </td>
+        <td>
+            <form action="{{url_for('delete_note', id=post.id)}}" method="post"> 
+                <button type="submit">Delete</button>
+            </form>
+        </td>
+        <td>
+            <form action="{{url_for('see_note', id=post.id)}}" method="post"> 
+                <button type="submit">see</button>
+            </form>
+        </td>
+    </tr>
+</table>
+
+
+
